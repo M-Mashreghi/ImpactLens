@@ -1,0 +1,10 @@
+{
+  "id": "n02_export_controls_syndicated",
+  "source_name": "Demo Syndication Wire",
+  "url": "https://wire.example.org/story/88123",
+  "title": "US tightens export rules on advanced AI chips to China",
+  "body": "The US Commerce Department announced new export restrictions on advanced AI accelerators to China on Monday. The rules require licenses for shipments of high-end data-center GPUs made by NVIDIA and AMD. Analysts said NVIDIA could lose a meaningful share of its data-center revenue from Chinese customers. AMD said it was reviewing the impact of the new rules on its MI-series accelerators. Foundry partner TSMC, which manufactures the affected chips, may see lower order volumes for advanced nodes.",
+  "published_at": "2025-03-03T14:40:00Z",
+  "retrieved_at": "2025-03-03T14:40:30Z",
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

@@ -1,0 +1,49 @@
+{
+  "match": [
+    "US proposes new limits on AI chip exports"
+  ],
+  "response": {
+    "event_type": "regulation_policy",
+    "event_summary": "US proposes limits on AI chip exports that would restrict NVIDIA data-center GPU sales.",
+    "direction": "negative",
+    "severity": "medium",
+    "confidence": 0.7,
+    "time_horizon": "medium_term",
+    "entities": [
+      {
+        "name": "NVIDIA",
+        "entity_type": "company",
+        "role": "primary_subject",
+        "proposed_ticker": "NVDA",
+        "direction": "negative",
+        "evidence_ids": [
+          2
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": 1,
+        "quote": "US officials proposed new limits on exports of advanced AI chips to China and other countries.",
+        "supports": [
+          "event_type"
+        ]
+      },
+      {
+        "id": 2,
+        "quote": "The proposal would restrict sales of NVIDIA data-center GPUs to many markets.",
+        "supports": [
+          "direction",
+          "severity",
+          "entity:NVIDIA"
+        ]
+      }
+    ],
+    "uncertainties": [
+      "Proposal not final."
+    ],
+    "rationale": "Proposed regulation targeting held issuer.",
+    "is_uncertain": false
+  },
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

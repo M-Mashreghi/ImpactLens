@@ -1,0 +1,140 @@
+[
+  {
+    "title": "Court rules Alphabet must change search distribution deals",
+    "scoring_version": "impact-v1",
+    "level": "Medium",
+    "absolute_priority": 18.75,
+    "signed_score": -18.75,
+    "components": [
+      [
+        "GOOGL",
+        "direct",
+        -0.1125,
+        true
+      ],
+      [
+        "GOOG",
+        "direct",
+        -0.075,
+        true
+      ]
+    ]
+  },
+  {
+    "title": "Oil prices jump after major producers announce deeper output cuts",
+    "scoring_version": "impact-v1",
+    "level": "Medium",
+    "absolute_priority": 11.1,
+    "signed_score": 5.7,
+    "components": [
+      [
+        "XOM",
+        "commodity",
+        0.084,
+        true
+      ],
+      [
+        "DAL",
+        "commodity",
+        -0.027,
+        true
+      ]
+    ]
+  },
+  {
+    "title": "US proposes new limits on AI chip exports",
+    "scoring_version": "impact-v1",
+    "level": "High",
+    "absolute_priority": 35.63,
+    "signed_score": -28.63,
+    "components": [
+      [
+        "NVDA",
+        "direct",
+        -0.2625,
+        true
+      ],
+      [
+        "TSM",
+        "supplier",
+        -0.0588,
+        true
+      ],
+      [
+        "AMD",
+        "competitor",
+        0.035,
+        true
+      ]
+    ]
+  },
+  {
+    "title": "US tightens export rules on advanced AI chips to China",
+    "scoring_version": "impact-v1",
+    "level": "Critical",
+    "absolute_priority": 100.0,
+    "signed_score": -100.0,
+    "components": [
+      [
+        "NVDA",
+        "direct",
+        -0.489375,
+        true
+      ],
+      [
+        "AMD",
+        "direct",
+        -0.32625,
+        true
+      ],
+      [
+        "NVDA",
+        "customer",
+        -0.18792,
+        false
+      ],
+      [
+        "TSM",
+        "direct",
+        -0.1827,
+        true
+      ],
+      [
+        "AMD",
+        "customer",
+        -0.10962,
+        false
+      ],
+      [
+        "TSM",
+        "supplier",
+        -0.10962,
+        false
+      ],
+      [
+        "NVDA",
+        "competitor",
+        0.097875,
+        false
+      ],
+      [
+        "TSM",
+        "supplier",
+        -0.095918,
+        false
+      ],
+      [
+        "ASML",
+        "supplier",
+        -0.075168,
+        true
+      ],
+      [
+        "AMD",
+        "competitor",
+        0.06525,
+        false
+      ]
+    ]
+  }
+]

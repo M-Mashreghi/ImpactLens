@@ -1,0 +1,29 @@
+{
+  "match": [
+    "Unconfirmed chatter about a possible tech merger"
+  ],
+  "response": {
+    "event_type": "mna_corporate_action",
+    "event_summary": "Unconfirmed social-media rumor of a technology merger.",
+    "direction": "uncertain",
+    "severity": "low",
+    "confidence": 0.2,
+    "time_horizon": "unknown",
+    "entities": [],
+    "evidence": [
+      {
+        "id": 1,
+        "quote": "No company has confirmed any talks and the posts provided no details or sources.",
+        "supports": [
+          "event_type"
+        ]
+      }
+    ],
+    "uncertainties": [
+      "Companies are not named; claims unverified."
+    ],
+    "rationale": "Insufficient evidence for any conclusion.",
+    "is_uncertain": true
+  },
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

@@ -1,0 +1,40 @@
+{
+  "match": [
+    "Zephyr Robotics raises new funding round"
+  ],
+  "response": {
+    "event_type": "capital_return_raise",
+    "event_summary": "Private company Zephyr Robotics raises a funding round.",
+    "direction": "positive",
+    "severity": "low",
+    "confidence": 0.7,
+    "time_horizon": "medium_term",
+    "entities": [
+      {
+        "name": "Zephyr Robotics",
+        "entity_type": "company",
+        "role": "primary_subject",
+        "proposed_ticker": "ZPHR",
+        "evidence_ids": [
+          1
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": 1,
+        "quote": "Privately held Zephyr Robotics said it raised a new funding round",
+        "supports": [
+          "event_type",
+          "direction",
+          "severity",
+          "entity:Zephyr Robotics"
+        ]
+      }
+    ],
+    "uncertainties": [],
+    "rationale": "Funding round for a private company.",
+    "is_uncertain": false
+  },
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

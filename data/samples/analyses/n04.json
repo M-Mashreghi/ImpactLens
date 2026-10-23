@@ -1,0 +1,49 @@
+{
+  "match": [
+    "Court rules Alphabet must change search distribution deals"
+  ],
+  "response": {
+    "event_type": "litigation_legal",
+    "event_summary": "Court orders Alphabet to end exclusive search distribution agreements; Alphabet will appeal.",
+    "direction": "negative",
+    "severity": "medium",
+    "confidence": 0.75,
+    "time_horizon": "long_term",
+    "entities": [
+      {
+        "name": "Alphabet",
+        "entity_type": "company",
+        "role": "primary_subject",
+        "proposed_ticker": "GOOGL",
+        "direction": "negative",
+        "evidence_ids": [
+          1,
+          2
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": 1,
+        "quote": "A federal court ruled on Saturday that Alphabet must end exclusive search distribution agreements.",
+        "supports": [
+          "event_type"
+        ]
+      },
+      {
+        "id": 2,
+        "quote": "The ruling is a significant legal setback for Alphabet's search advertising business.",
+        "supports": [
+          "direction",
+          "severity"
+        ]
+      }
+    ],
+    "uncertainties": [
+      "Appeal outcome unknown."
+    ],
+    "rationale": "Adverse court ruling against the held issuer.",
+    "is_uncertain": false
+  },
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

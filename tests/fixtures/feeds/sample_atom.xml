@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Example Atom (synthetic fixture)</title>
+  <entry>
+    <id>tag:example,1</id>
+    <title>Bank results beat estimates</title>
+    <link rel="alternate" href="https://example.com/a/1"/>
+    <published>2025-03-04T12:00:00Z</published>
+    <summary>Quarterly results were stronger than expected.</summary>
+  </entry>
+</feed>

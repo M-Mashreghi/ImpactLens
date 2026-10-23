@@ -1,0 +1,78 @@
+{
+  "match": [
+    "Oil prices jump after major producers announce deeper output cuts"
+  ],
+  "response": {
+    "event_type": "commodity_energy",
+    "event_summary": "Crude oil prices jump after producers announce deeper output cuts.",
+    "direction": "positive",
+    "severity": "high",
+    "confidence": 0.8,
+    "time_horizon": "short_term",
+    "entities": [
+      {
+        "name": "crude oil",
+        "entity_type": "commodity",
+        "role": "primary_subject",
+        "direction": "positive",
+        "evidence_ids": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "ExxonMobil",
+        "entity_type": "company",
+        "role": "mentioned",
+        "proposed_ticker": "XOM",
+        "evidence_ids": [
+          3
+        ]
+      },
+      {
+        "name": "Delta Air Lines",
+        "entity_type": "company",
+        "role": "mentioned",
+        "proposed_ticker": "DAL",
+        "evidence_ids": [
+          4
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": 1,
+        "quote": "Crude oil prices jumped sharply on Friday evening after a group of major producers announced deeper output cuts.",
+        "supports": [
+          "event_type",
+          "direction",
+          "entity:crude oil"
+        ]
+      },
+      {
+        "id": 2,
+        "quote": "Brent crude rose more than six percent in after-hours trading.",
+        "supports": [
+          "severity",
+          "direction"
+        ]
+      },
+      {
+        "id": 3,
+        "quote": "Higher crude prices typically lift revenue for integrated producers such as ExxonMobil.",
+        "supports": []
+      },
+      {
+        "id": 4,
+        "quote": "Airlines including Delta Air Lines face higher jet fuel costs when crude prices rise.",
+        "supports": []
+      }
+    ],
+    "uncertainties": [
+      "Durability of the cuts is unknown."
+    ],
+    "rationale": "Supply cut drives crude price move; company effects come from stored factor exposures.",
+    "is_uncertain": false
+  },
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

@@ -1,0 +1,233 @@
+[
+  {
+    "security_id": "sec_nvda",
+    "issuer_id": "iss_nvidia",
+    "canonical_name": "NVIDIA Corporation",
+    "ticker": "NVDA",
+    "exchange": "NASDAQ",
+    "mic": "XNAS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "industry": "Semiconductors",
+    "aliases": [
+      "NVIDIA",
+      "Nvidia Corp"
+    ]
+  },
+  {
+    "security_id": "sec_amd",
+    "issuer_id": "iss_amd",
+    "canonical_name": "Advanced Micro Devices, Inc.",
+    "ticker": "AMD",
+    "exchange": "NASDAQ",
+    "mic": "XNAS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "industry": "Semiconductors",
+    "aliases": [
+      "AMD",
+      "Advanced Micro Devices"
+    ]
+  },
+  {
+    "security_id": "sec_asml",
+    "issuer_id": "iss_asml",
+    "canonical_name": "ASML Holding N.V.",
+    "ticker": "ASML",
+    "exchange": "NASDAQ",
+    "mic": "XNAS",
+    "country": "NL",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "industry": "Semiconductor Equipment",
+    "aliases": [
+      "ASML"
+    ]
+  },
+  {
+    "security_id": "sec_tsm",
+    "issuer_id": "iss_tsmc",
+    "canonical_name": "Taiwan Semiconductor Manufacturing Company Limited",
+    "ticker": "TSM",
+    "exchange": "NYSE",
+    "mic": "XNYS",
+    "country": "TW",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "industry": "Semiconductors",
+    "aliases": [
+      "TSMC",
+      "Taiwan Semiconductor",
+      "Taiwan Semiconductor Manufacturing"
+    ]
+  },
+  {
+    "security_id": "sec_aapl",
+    "issuer_id": "iss_apple",
+    "canonical_name": "Apple Inc.",
+    "ticker": "AAPL",
+    "exchange": "NASDAQ",
+    "mic": "XNAS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "industry": "Technology Hardware",
+    "aliases": [
+      "Apple"
+    ]
+  },
+  {
+    "security_id": "sec_msft",
+    "issuer_id": "iss_microsoft",
+    "canonical_name": "Microsoft Corporation",
+    "ticker": "MSFT",
+    "exchange": "NASDAQ",
+    "mic": "XNAS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Information Technology",
+    "industry": "Software",
+    "aliases": [
+      "Microsoft"
+    ]
+  },
+  {
+    "security_id": "sec_googl",
+    "issuer_id": "iss_alphabet",
+    "canonical_name": "Alphabet Inc. Class A",
+    "ticker": "GOOGL",
+    "exchange": "NASDAQ",
+    "mic": "XNAS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "industry": "Interactive Media",
+    "share_class": "Class A",
+    "aliases": [
+      "Alphabet",
+      "Google",
+      "Alphabet Inc"
+    ]
+  },
+  {
+    "security_id": "sec_goog",
+    "issuer_id": "iss_alphabet",
+    "canonical_name": "Alphabet Inc. Class C",
+    "ticker": "GOOG",
+    "exchange": "NASDAQ",
+    "mic": "XNAS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Communication Services",
+    "industry": "Interactive Media",
+    "share_class": "Class C",
+    "aliases": []
+  },
+  {
+    "security_id": "sec_xom",
+    "issuer_id": "iss_exxon",
+    "canonical_name": "Exxon Mobil Corporation",
+    "ticker": "XOM",
+    "exchange": "NYSE",
+    "mic": "XNYS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Energy",
+    "industry": "Oil & Gas",
+    "aliases": [
+      "ExxonMobil",
+      "Exxon"
+    ]
+  },
+  {
+    "security_id": "sec_dal",
+    "issuer_id": "iss_delta",
+    "canonical_name": "Delta Air Lines, Inc.",
+    "ticker": "DAL",
+    "exchange": "NYSE",
+    "mic": "XNYS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "industry": "Airlines",
+    "aliases": [
+      "Delta",
+      "Delta Air Lines"
+    ]
+  },
+  {
+    "security_id": "sec_jpm",
+    "issuer_id": "iss_jpmorgan",
+    "canonical_name": "JPMorgan Chase & Co.",
+    "ticker": "JPM",
+    "exchange": "NYSE",
+    "mic": "XNYS",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Financials",
+    "industry": "Banks",
+    "aliases": [
+      "JPMorgan",
+      "JPMorgan Chase",
+      "JP Morgan"
+    ]
+  },
+  {
+    "security_id": "sec_abc_nyse",
+    "issuer_id": "iss_abacus",
+    "canonical_name": "Abacus Brands Corp (fictional)",
+    "ticker": "ABC",
+    "exchange": "NYSE",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Consumer Staples",
+    "industry": "Household Products",
+    "aliases": [
+      "Abacus Brands"
+    ]
+  },
+  {
+    "security_id": "sec_abc_tsx",
+    "issuer_id": "iss_abcmining",
+    "canonical_name": "ABC Mining Ltd (fictional)",
+    "ticker": "ABC",
+    "exchange": "TSX",
+    "country": "CA",
+    "currency": "CAD",
+    "sector": "Materials",
+    "industry": "Metals & Mining",
+    "aliases": [
+      "ABC Mining"
+    ]
+  },
+  {
+    "security_id": "sec_acmi",
+    "issuer_id": "iss_acme_ind",
+    "canonical_name": "Acme Industrial Inc (fictional)",
+    "ticker": "ACMI",
+    "exchange": "NYSE",
+    "country": "US",
+    "currency": "USD",
+    "sector": "Industrials",
+    "industry": "Machinery",
+    "aliases": [
+      "Acme"
+    ]
+  },
+  {
+    "security_id": "sec_acmf",
+    "issuer_id": "iss_acme_foods",
+    "canonical_name": "Acme Foods plc (fictional)",
+    "ticker": "ACMF",
+    "exchange": "LSE",
+    "country": "GB",
+    "currency": "GBP",
+    "sector": "Consumer Staples",
+    "industry": "Food Products",
+    "aliases": [
+      "Acme"
+    ]
+  }
+]

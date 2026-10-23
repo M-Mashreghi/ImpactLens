@@ -1,0 +1,40 @@
+{
+  "match": [
+    "Apple supplier update"
+  ],
+  "response": {
+    "event_type": "supply_chain_operations",
+    "event_summary": "Apple faces a major supply disruption.",
+    "direction": "negative",
+    "severity": "critical",
+    "confidence": 0.9,
+    "time_horizon": "short_term",
+    "entities": [
+      {
+        "name": "Apple",
+        "entity_type": "company",
+        "role": "primary_subject",
+        "proposed_ticker": "AAPL",
+        "evidence_ids": [
+          1
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": 1,
+        "quote": "Apple halted all iPhone production indefinitely after a factory fire.",
+        "supports": [
+          "event_type",
+          "direction",
+          "severity",
+          "entity:Apple"
+        ]
+      }
+    ],
+    "uncertainties": [],
+    "rationale": "(Deliberately fabricated fixture: quote does not appear in the article.)",
+    "is_uncertain": false
+  },
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

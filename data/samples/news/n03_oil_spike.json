@@ -1,0 +1,10 @@
+{
+  "id": "n03_oil_spike",
+  "source_name": "Demo Fixture Wire",
+  "url": "https://news.example.com/commodities/oil-jumps",
+  "title": "Oil prices jump after major producers announce deeper output cuts",
+  "body": "Crude oil prices jumped sharply on Friday evening after a group of major producers announced deeper output cuts. Brent crude rose more than six percent in after-hours trading. Higher crude prices typically lift revenue for integrated producers such as ExxonMobil. Airlines including Delta Air Lines face higher jet fuel costs when crude prices rise.",
+  "published_at": "2025-03-07T21:30:00Z",
+  "retrieved_at": "2025-03-07T21:30:30Z",
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

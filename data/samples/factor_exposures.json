@@ -1,0 +1,65 @@
+[
+  {
+    "security_id": "sec_xom",
+    "factor_key": "commodity:crude_oil",
+    "family": "commodity",
+    "sensitivity": 0.8,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: integrated oil producer revenue linked to crude prices",
+    "as_of": "2024-01-01"
+  },
+  {
+    "security_id": "sec_dal",
+    "factor_key": "commodity:crude_oil",
+    "family": "commodity",
+    "sensitivity": -0.6,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: airline fuel cost linked to crude prices",
+    "as_of": "2024-01-01"
+  },
+  {
+    "security_id": "sec_dal",
+    "factor_key": "commodity:jet_fuel",
+    "family": "commodity",
+    "sensitivity": -0.8,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: jet fuel is a major airline cost",
+    "as_of": "2024-01-01"
+  },
+  {
+    "security_id": "sec_jpm",
+    "factor_key": "macro:interest_rates",
+    "family": "macro",
+    "sensitivity": 0.5,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: bank net interest income sensitivity",
+    "as_of": "2024-01-01"
+  },
+  {
+    "security_id": "sec_nvda",
+    "factor_key": "country:CN",
+    "family": "country",
+    "sensitivity": 0.4,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: revenue share attributed to China",
+    "as_of": "2024-01-01"
+  },
+  {
+    "security_id": "sec_amd",
+    "factor_key": "country:CN",
+    "family": "country",
+    "sensitivity": 0.3,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: revenue share attributed to China",
+    "as_of": "2024-01-01"
+  },
+  {
+    "security_id": "sec_asml",
+    "factor_key": "country:CN",
+    "family": "country",
+    "sensitivity": 0.4,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: revenue share attributed to China",
+    "as_of": "2024-01-01"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "n04_alphabet_ruling",
+  "source_name": "Demo Fixture Wire",
+  "url": "https://news.example.com/legal/alphabet-ruling",
+  "title": "Court rules Alphabet must change search distribution deals",
+  "body": "A federal court ruled on Saturday that Alphabet must end exclusive search distribution agreements. The ruling is a significant legal setback for Alphabet's search advertising business. Alphabet said it would appeal the decision.",
+  "published_at": "2025-03-08T15:00:00Z",
+  "retrieved_at": "2025-03-08T15:00:30Z",
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "n05_rumor",
+  "source_name": "Demo Fixture Wire",
+  "url": "https://blog.example.net/rumor-mill",
+  "title": "Unconfirmed chatter about a possible tech merger",
+  "body": "Social media posts claimed that two large technology companies might be discussing some form of combination. No company has confirmed any talks and the posts provided no details or sources.",
+  "published_at": "2025-03-10T13:00:00Z",
+  "retrieved_at": "2025-03-10T13:00:30Z",
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

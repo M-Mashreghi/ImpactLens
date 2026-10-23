@@ -1,0 +1,10 @@
+{
+  "id": "n06_fabricated",
+  "source_name": "Demo Fixture Wire",
+  "url": "https://news.example.com/tech/apple-supplier",
+  "title": "Apple supplier update",
+  "body": "A supplier update for Apple was published on Tuesday describing routine logistics changes at several assembly sites.",
+  "published_at": "2025-03-11T15:00:00Z",
+  "retrieved_at": "2025-03-11T15:00:30Z",
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

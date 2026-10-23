@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: python -m pip install -e ".[dev]" pip-audit
+      - name: Lint
+        run: ruff check src tests
+      - name: Type check
+        run: mypy
+      - name: Tests (deterministic fakes, no network)
+        env:
+          IMPACTLENS_ENV: test
+        run: pytest -m "not live"
+      - name: Offline evaluation
+        run: python -m impactlens.intelligence.eval > eval-report.json
+      - name: Dependency audit
+        run: pip-audit --skip-editable
+      - name: Secret / private-data guard
+        run: |
+          ! git ls-files | grep -E '(^|/)\.env$|\.db$|^data/private/'
+          ! git grep -nE 'sk-[A-Za-z0-9]{20,}' -- ':!tests'
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate compose
+        run: docker compose config --quiet
+      - name: Build image
+        run: docker build -t impactlens:ci .
+      - name: Container smoke test
+        run: |
+          docker run -d --name il -p 8000:8000 impactlens:ci
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8000/ready && break; sleep 2; done
+          docker exec il impactlens demo
+          curl -fsS http://127.0.0.1:8000/impacts | python -c "import json,sys; assert json.load(sys.stdin)"
+          docker rm -f il

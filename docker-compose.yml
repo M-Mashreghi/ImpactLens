@@ -1,0 +1,58 @@
+# ImpactLens single-host deployment. Secrets come from .env at runtime (never baked into the image).
+x-impactlens: &impactlens
+  build: .
+  image: impactlens:local
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    - IMPACTLENS_DB_PATH=/app/data/impactlens.db
+    - IMPACTLENS_CACHE_DIR=/app/cache
+  volumes:
+    - impactlens-data:/app/data
+    - impactlens-cache:/app/cache
+  restart: unless-stopped
+
+services:
+  impactlens-api:
+    <<: *impactlens
+    command: ["uvicorn", "impactlens.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "127.0.0.1:8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=4).status == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+
+  impactlens-dashboard:
+    <<: *impactlens
+    command: ["streamlit", "run", "/app/dashboard_app.py", "--server.port=8501", "--server.address=0.0.0.0",
+              "--server.headless=true", "--browser.gatherUsageStats=false"]
+    environment:
+      - IMPACTLENS_API_URL=http://impactlens-api:8000
+    volumes: []
+    ports:
+      - "127.0.0.1:8501:8501"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=4).status == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    depends_on:
+      impactlens-api:
+        condition: service_healthy
+
+  impactlens-worker:
+    <<: *impactlens
+    command: ["python", "-m", "impactlens.jobs.run"]
+    healthcheck:
+      disable: true
+    depends_on:
+      impactlens-api:
+        condition: service_healthy
+
+volumes:
+  impactlens-data:
+  impactlens-cache:

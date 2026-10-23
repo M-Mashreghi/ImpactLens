@@ -1,0 +1,10 @@
+{
+  "id": "n07_unresolved",
+  "source_name": "Demo Fixture Wire",
+  "url": "https://news.example.com/startups/zephyr",
+  "title": "Zephyr Robotics raises new funding round",
+  "body": "Privately held Zephyr Robotics said it raised a new funding round to expand its warehouse automation business. The company did not disclose the valuation.",
+  "published_at": "2025-03-12T15:30:00Z",
+  "retrieved_at": "2025-03-12T15:30:30Z",
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

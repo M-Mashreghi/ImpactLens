@@ -1,0 +1,38 @@
+[
+  {
+    "source_security_id": "sec_tsm",
+    "target_security_id": "sec_nvda",
+    "relationship_type": "supplier",
+    "strength": 0.8,
+    "provenance_source": "public_filing",
+    "provenance_ref": "Demo citation: NVIDIA annual report describes TSMC as a foundry partner",
+    "as_of": "2024-02-21"
+  },
+  {
+    "source_security_id": "sec_tsm",
+    "target_security_id": "sec_amd",
+    "relationship_type": "supplier",
+    "strength": 0.7,
+    "provenance_source": "public_filing",
+    "provenance_ref": "Demo citation: AMD annual report describes TSMC as a wafer supplier",
+    "as_of": "2024-01-31"
+  },
+  {
+    "source_security_id": "sec_asml",
+    "target_security_id": "sec_tsm",
+    "relationship_type": "supplier",
+    "strength": 0.6,
+    "provenance_source": "public_filing",
+    "provenance_ref": "Demo citation: TSMC annual report lists lithography equipment suppliers",
+    "as_of": "2024-04-01"
+  },
+  {
+    "source_security_id": "sec_amd",
+    "target_security_id": "sec_nvda",
+    "relationship_type": "competitor",
+    "strength": 0.5,
+    "provenance_source": "synthetic_demo",
+    "provenance_ref": "Demo mapping: overlapping data-center GPU markets",
+    "as_of": "2024-01-01"
+  }
+]

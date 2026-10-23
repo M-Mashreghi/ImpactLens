@@ -1,0 +1,10 @@
+{
+  "id": "n08_prior_export",
+  "source_name": "Demo Fixture Wire",
+  "url": "https://news.example.com/markets/earlier-chip-rules",
+  "title": "US proposes new limits on AI chip exports",
+  "body": "US officials proposed new limits on exports of advanced AI chips to China and other countries. The proposal would restrict sales of NVIDIA data-center GPUs to many markets. Industry groups warned the limits could hurt US chip makers' international sales.",
+  "published_at": "2025-01-13T15:00:00Z",
+  "retrieved_at": "2025-01-13T15:00:30Z",
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

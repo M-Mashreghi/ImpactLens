@@ -1,0 +1,111 @@
+{
+  "match": [
+    "US tightens export rules on advanced AI chips to China"
+  ],
+  "response": {
+    "event_type": "regulation_policy",
+    "event_summary": "US imposes license requirements on exports of high-end AI accelerators to China, affecting NVIDIA and AMD; TSMC may see lower advanced-node orders.",
+    "direction": "negative",
+    "severity": "high",
+    "confidence": 0.87,
+    "time_horizon": "medium_term",
+    "entities": [
+      {
+        "name": "NVIDIA",
+        "entity_type": "company",
+        "role": "primary_subject",
+        "proposed_ticker": "NVDA",
+        "direction": "negative",
+        "evidence_ids": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "AMD",
+        "entity_type": "company",
+        "role": "primary_subject",
+        "proposed_ticker": "AMD",
+        "direction": "negative",
+        "evidence_ids": [
+          2,
+          4
+        ]
+      },
+      {
+        "name": "TSMC",
+        "entity_type": "company",
+        "role": "affected",
+        "proposed_ticker": "TSM",
+        "direction": "negative",
+        "evidence_ids": [
+          5
+        ]
+      },
+      {
+        "name": "US Commerce Department",
+        "entity_type": "regulator",
+        "role": "actor",
+        "evidence_ids": [
+          1
+        ]
+      },
+      {
+        "name": "China",
+        "entity_type": "country",
+        "role": "mentioned",
+        "evidence_ids": [
+          1
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "id": 1,
+        "quote": "The US Commerce Department announced new export restrictions on advanced AI accelerators to China",
+        "supports": [
+          "event_type"
+        ]
+      },
+      {
+        "id": 2,
+        "quote": "The rules require licenses for shipments of high-end data-center GPUs made by NVIDIA and AMD.",
+        "supports": [
+          "event_type",
+          "entity:NVIDIA",
+          "entity:AMD"
+        ]
+      },
+      {
+        "id": 3,
+        "quote": "NVIDIA could lose a meaningful share of its data-center revenue from Chinese customers",
+        "supports": [
+          "direction",
+          "severity",
+          "entity:NVIDIA"
+        ]
+      },
+      {
+        "id": 4,
+        "quote": "AMD said it was reviewing the impact of the new rules on its MI-series accelerators.",
+        "supports": [
+          "entity:AMD"
+        ]
+      },
+      {
+        "id": 5,
+        "quote": "TSMC, which manufactures the affected chips, may see lower order volumes for advanced nodes",
+        "supports": [
+          "direction",
+          "entity:TSMC"
+        ]
+      }
+    ],
+    "uncertainties": [
+      "Magnitude of revenue impact is not quantified in the article."
+    ],
+    "rationale": "Explicit regulatory restriction naming the companies; analyst comment indicates revenue risk.",
+    "is_uncertain": false
+  },
+  "note": "Synthetic demo data for ImpactLens. Not real financial data."
+}

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Runtime state
+/var/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+/backups/
+/cache/
+
+# Private portfolio quarantine: only synthetic demo data in data/samples/ may be tracked.
+/data/private/
+/data/*.csv
+portfolio*.csv
+!data/samples/*.csv
+
+# IDE
+.idea/
+.vscode/
